@@ -1,0 +1,96 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock title %}
+
+{% block body %}
+<div class="container-fluid px-0">
+  <!-- Carousel Section -->
+  <div id="carouselExampleIndicators" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://source.unsplash.com/Wpg3Qm0zaGk" class="d-block w-100" style="max-height: 400px;" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://source.unsplash.com/nxMsxgKxFxA" class="d-block w-100" style="max-height: 400px;" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://source.unsplash.com/8beTH4VkhLI" class="d-block w-100" style="max-height: 400px;" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- Featured Flavors Section -->
+  <div class="featured-flavors-section mt-5">
+    <h2 class="text-center mb-4">Featured Flavors</h2>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card h-100">
+          <img src="https://source.unsplash.com/raf4YPFIavU" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Vanilla Dream</h5>
+            <p class="card-text">Our classic vanilla ice cream, made with the finest Madagascar vanilla beans.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="https://source.unsplash.com/GDCEzfrSGuU" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Chocolate Bliss</h5>
+            <p class="card-text">Indulge in the rich and smooth taste of our premium chocolate ice cream.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="https://source.unsplash.com/WptFuJciSGI" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Strawberry Delight</h5>
+            <p class="card-text">Experience the freshness of real strawberries in every bite of this delightful flavor.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="https://source.unsplash.com/VXPtggPOpcA" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Mint Chocolate Chip</h5>
+            <p class="card-text">Cool and refreshing mint combined with rich chocolate chips for a delightful treat.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="https://source.unsplash.com/GL6J_sFYHLw" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Caramel Crunch</h5>
+            <p class="card-text">Crunchy caramel swirls in every bite, adding a delightful texture to our premium ice cream.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="https://source.unsplash.com/Vc7wBKTZVJ4" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Rocky Road</h5>
+            <p class="card-text">A classic combination of chocolate, marshmallows, and nuts for a rocky road adventure.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock body %}

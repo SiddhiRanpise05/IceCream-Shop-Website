@@ -1,0 +1,65 @@
+<!-- services/service_detail.html -->
+{% extends "base.html" %}
+
+{% block title %}{{ service.name }}{% endblock title %}
+
+{% block body %}
+<div class="container mt-5">
+  <div class="card">
+    <div class="detail-image">
+      <img src="https://source.unsplash.com/fklYdTMCmkI" class="card-img-top" alt="{{ service.name }}">
+    </div>
+    <div class="card-body">
+      <div class="detail-content">
+        <h2>{{ service.name }}</h2>
+        <p>{{ service.description }}</p>
+      </div>
+      <div class="detail-actions mt-3">
+        <a href="{% url 'service_edit' pk=service.pk %}" class="btn btn-primary">Edit</a>
+        <a href="{% url 'service_list' %}" class="btn btn-secondary">Back to Services</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      
+      .container {
+        max-width: 800px;
+        margin: 50px auto;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+      }
+      
+      .about-title {
+        color: #333;
+        text-align: center;
+      }
+      
+      .about-section {
+        margin-bottom: 30px;
+      }
+      
+      .about-image {
+        width: 100%;
+        max-height: 300px;
+        object-fit: cover;
+        border-radius: 8px;
+      }
+      
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      
+      ul li {
+        margin-bottom: 10px;
+      }
+</style>
+{% endblock body %}
